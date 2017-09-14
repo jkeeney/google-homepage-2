@@ -2,8 +2,15 @@
 	box-sizing: border-box;
 }
 
+.topnav {
+	padding-right: 20px;
+}
+
 ul {
 	list-style-type: none;
+	display: flex;
+	float: right;
+	align-items: center;
 }
 
 li {
@@ -12,7 +19,7 @@ li {
 
 li a{
 	display: block;
-	padding: 14px 16px;
+	padding: 14px 10px;
 	text-decoration: none;
 	font-family: sans-serif;
 	color: #2d2d2d;
@@ -21,6 +28,38 @@ li a{
 
 li a:hover {
 	text-decoration: underline;
+}
+
+#bell {
+	background-image: url("../images/google_icons.png");
+	background-position: 334px -21px;
+	height: 20px;
+	width: 20px;
+	background-color: #6d6d6d;
+	border-radius: 100%;
+}
+
+#apps {
+	background-image: url("../images/google_icons.png");
+	background-position: 391px 25px;
+	height: 20px;
+	width: 20px;
+	opacity: 0.5;
+}
+
+#bell:hover {
+	background-color: black;
+}
+
+#apps:hover {
+	opacity: 1;
+}
+
+#Jaccount {
+	background-image: url("../images/J.jpg");
+	height: 32px;
+	width: 32px;
+	border-radius: 100%;
 }
 
 .spacer {
@@ -41,6 +80,10 @@ li a:hover {
 	border: 1px solid;
 	border-color: #dadada;
 	box-shadow: 1px 3px 5px 0px #dadada;
+}
+
+.searchform input:focus {
+	outline: none;
 }
 
 #textsearch {
@@ -93,4 +136,34 @@ li a:hover {
 	border:1px solid;
 	border-color: #cacaca;
 	box-shadow: 0px 1px 1px 0px #cacaca;
+}
+
+.bottomnav {
+	height: 40px;
+	background-color: #f3f3f3;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid;
+	border-top-color: #dadada;
+}
+
+.left {
+	float: left;
+	padding-left: 15px;
+}
+
+.left li a {
+	color: #6d6d6d;
+	padding: 12px 15px;
+
+}
+
+.right {
+	padding-right: 15px;
+}
+
+.right li a {
+	color: #6d6d6d;
+	padding: 12px 15px;
 }
